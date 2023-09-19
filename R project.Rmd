@@ -1,0 +1,34 @@
+# Importing the needed libraries:
+
+```{r}
+library(tidyverse)
+library(tibble)
+library(dplyr)
+```
+
+#Setting the working directory:
+
+```{r}
+getwd()
+setwd("C:/Users/Admin/Desktop/R project")
+```
+
+#Uploading the datasets as tibbles:
+
+```{r}
+data.as.tibbles <- function(data) {
+  d <- read.csv("path",sep=",") %>%
+    as_tibble()
+}
+
+cab.data <- data.as.tibbles("Cab_Data.csv")
+us.cities <- data.as.tibbles("City.csv")
+customer.id <- data.as.tibbles ("Customer_ID.csv")
+transaction.id <- data.as.tibbles("Transaction_ID.csv")
+
+```
+
+```{r}
+
+```
+
